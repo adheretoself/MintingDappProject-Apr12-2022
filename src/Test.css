@@ -1,0 +1,171 @@
+li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-full {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header-grid-logo {
+    height: 100px;
+}
+
+.header-grid-navbar {
+    height: 100px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+main {
+    height: 800px;
+    background-color: black;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-grid-left {
+    margin-top: 10px;
+}
+
+.main-grid-left-rocket {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 100px;
+    left : 15x;
+    z-index: 0;
+    animation-name: dropFly;
+	animation-duration: 3s;
+    animation-direction: infinite;
+}
+
+.main-grid-left-wall-1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 5px;
+    top: 150px;
+    z-index: 1;
+}
+
+.main-grid-left-wall-2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 150px;
+    left : 100px;
+    z-index: 1;
+}
+
+.main-grid-left-button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 195px;
+    left : 75px;
+    z-index: 2;
+}
+
+.main-grid-right {
+    margin-top: 10px;
+}
+
+.main-grid-right-pivot {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 60px;
+    z-index: 2;
+}
+
+footer {
+    height: 40px;
+    background-color: lightgreen;
+}
+
+@keyframes dropFly {
+	0%{
+        transform: translateY(-1px);
+    }
+    5%{
+        transform: translateY(-2px);
+    }
+    10%{
+        transform: translateY(-3px);
+    }
+    15%{
+        transform: translateY(-4px);
+    }
+    20%{
+        transform: translateY(-5px);
+    }
+    25%{
+        transform: translateY(-6px);
+    }
+    30%{
+        transform: translateY(-7px);
+    }
+    35%{
+        transform: translateY(-8px);
+    }
+    40%{
+        transform: translateY(-9px);
+    }
+    45%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(-11px);
+    }
+    55%{
+        transform: translateY(-12px);
+    }
+    60%{
+        transform: translateY(-13px);
+    }
+    65%{
+        transform: translateY(-14px);
+    }
+    70%{
+        transform: translateY(-15px);
+    }
+    75%{
+        transform: translateY(-16px);
+    }
+    80%{
+        transform: translateY(-17px);
+    }
+    85%{
+        transform: translateY(-18px);
+    }
+    90%{
+        transform: translateY(-19px);
+    }
+    95%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(-21px);
+    }
+}

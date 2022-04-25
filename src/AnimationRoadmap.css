@@ -1,0 +1,754 @@
+/*
+.roadmap-initial::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to top, #6B6B6B, transparent);
+    z-index: 10;
+}
+*/
+
+.roadmap-initial {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-initial img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.board {
+    width: 1200px !important;
+}
+
+.teacher {
+    width: 1200px !important;
+}
+
+/* SECOND ANIMATION ROADMAP */
+
+.roadmap-content {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/background-roadmap.png');
+}
+
+.roadmap {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 1.5rem;
+    top: 5.5rem;
+    opacity: 0;
+}
+
+.pizza {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 1.5rem;
+    top: 5.5rem;
+    opacity: 0;
+}
+
+.roadmap1, .pizza1 {
+    opacity: 1;
+    z-index: 1;
+}
+
+.roadmap2, .pizza2 {
+    opacity: 0;
+    z-index: 2;
+}
+
+.roadmap3, .pizza3 {
+    opacity: 0;
+    z-index: 3;
+}
+
+.roadmap4, .pizza4 {
+    opacity: 0;
+    z-index: 4;
+}
+
+.roadmap5, .pizza5 {
+    opacity: 0;
+    z-index: 5;
+}
+
+.roadmap6, .pizza6 {
+    opacity: 0;
+    z-index: 6;
+}
+
+@media (min-width: 0px) {
+    .roadmap-initial {
+        height: 800px !important;
+    }
+
+    .roadmap-content {
+        height: 1000px !important;
+    }
+
+    .board {
+        margin-top: 100px !important;
+        height: 300px !important;
+    }
+    
+    .teacher {
+        margin-top: 100px !important;
+        height: 300px !important;
+    }
+
+    .roadmap {
+        width: 200px;
+        height: 200px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .pizza {
+        width: 200px;
+        height: 200px;
+        top: 35%;
+        left: 10%;
+    }
+}
+
+@media (min-width: 270px) {
+    .roadmap {
+        left: 12.5%;
+    }
+
+    .pizza {
+        left: 12.5%;
+    }
+}
+
+@media (min-width: 290px) {
+    .roadmap {
+        left: 15%;
+    }
+
+    .pizza {
+        left: 15%;
+    }
+}
+
+@media (min-width: 310px) {
+    .roadmap {
+        left: 17%;
+    }
+
+    .pizza {
+        left: 17%;
+    }
+}
+
+@media (min-width: 320px) {
+    .roadmap {
+        width: 250px;
+        height: 250px;
+        left: 11%;
+    }
+
+    .pizza {
+        width: 250px;
+        height: 250px;
+        top: 40%;
+        left: 11%;
+    }
+}
+
+@media (min-width: 340px) {
+    .roadmap {
+        left: 13%;
+    }
+
+    .pizza {
+        left: 13%;
+    }
+}
+
+@media (min-width: 360px) {
+    .roadmap {
+        left: 16%;
+    }
+
+    .pizza {
+        left: 16%;
+    }
+}
+
+@media (min-width: 380px) {
+    .roadmap {
+        left: 19%;
+    }
+
+    .pizza {
+        left: 19%;
+    }
+}
+
+@media (min-width: 400px) {
+    .board {
+        margin-top: 100px !important;
+        height: 400px !important;
+    }
+    
+    .teacher {
+        margin-top: 100px !important;
+        height: 400px !important;
+    }
+}
+
+@media (min-width: 420px) {
+    .roadmap {
+        left: 21%;
+    }
+
+    .pizza {
+        left: 21%;
+    }
+}
+
+@media (min-width: 440px) {
+    .roadmap {
+        left: 22.5%;
+    }
+
+    .pizza {
+        left: 22.5%;
+    }
+}
+
+@media (min-width: 480px) {
+    .roadmap {
+        left: 24%;
+    }
+
+    .pizza {
+        left: 24%;
+    }
+}
+
+@media (min-width: 520px) {
+    .roadmap {
+        width: 280px;
+        height: 280px;
+        top: 4%;
+        left: 22%;
+    }
+
+    .pizza {
+        width: 280px;
+        height: 280px;
+        top: 40%;
+        left: 22%;
+    }
+}
+
+@media (min-width: 530px) {
+    .roadmap {
+        left: 24%;
+    }
+
+    .pizza {
+        left: 24%;
+    }
+}
+
+@media (min-width: 580px) {
+    .roadmap {
+        left: 26%;
+    }
+
+    .pizza {
+        left: 26%;
+    }
+}
+
+@media (min-width: 600px) {
+    .roadmap {
+        left: 27%;
+    }
+
+    .pizza {
+        left: 27%;
+    }
+}
+
+@media (min-width: 630px) {
+    .roadmap {
+        left: 29%;
+    }
+
+    .pizza {
+        left: 29%;
+    }
+}
+
+@media (min-width: 680px) {
+    .roadmap {
+        left: 30%;
+    }
+
+    .pizza {
+        left: 30%;
+    }
+}
+
+@media (min-width: 700px) {
+    .board {
+        margin-top: 50px !important;
+        height: 500px !important;
+    }
+    
+    .teacher {
+        margin-top: 50px !important;
+        height: 500px !important;
+    }
+}
+
+@media (min-width: 720px) {
+    .roadmap {
+        left: 32%;
+    }
+
+    .pizza {
+        left: 32%;
+    }
+}
+
+@media (min-width: 750px) {
+    .roadmap {
+        left: 34%;
+    }
+
+    .pizza {
+        left: 34%;
+    }
+}
+
+@media (min-width: 800px) {
+    .roadmap {
+        top: 20%;
+        left: 5%;
+    }
+
+    .pizza {
+        top: 20%;
+        left: 60%;
+    }
+}
+
+@media (min-width: 860px) {
+    .board {
+        margin-top: 50px !important;
+        height: 600px !important;
+    }
+    
+    .teacher {
+        margin-top: 50px !important;
+        height: 600px !important;
+    }
+
+    .pizza {
+        left: 62%;
+    }
+}
+
+@media (min-width: 890px) {
+    .roadmap {
+        left: 8%;
+    }
+}
+
+@media (min-width: 950px) {
+    .roadmap {
+        left: 10%;
+    }
+
+    .pizza {
+        left: 63%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .roadmap {
+        width: 350px;
+        height: 350px;
+        left: 5%;
+    }
+
+    .pizza {
+        width: 350px;
+        height: 350px;
+        left: 60%;
+    }
+}
+
+@media (min-width: 1040px) {
+    .board {
+        margin-top: 0px !important;
+        height: 700px !important;
+    }
+    
+    .teacher {
+        margin-top: 0px !important;
+        height: 700px !important;
+    }
+
+    .pizza {
+        left: 62%;
+    }
+}
+
+@media (min-width: 1090px) {
+    .pizza {
+        left: 63%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .roadmap {
+        width: max-content;
+        height: max-content;
+        left: 3%;
+        top: 8%;
+    }
+
+    .pizza {
+        width: max-content;
+        height: max-content;
+        top: 8%;
+        left: 52%;
+    }
+}
+
+@media (min-width: 1110px) {
+    .pizza {
+        left: 53%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .pizza {
+        left: 54%;
+    }
+}
+
+@media (min-width: 1180px) {
+    .pizza {
+        left: 55%;
+    }
+}
+
+@media (min-width: 1210px) {
+    .pizza {
+        left: 56%;
+    }
+}
+
+@media (min-width: 1240px) {
+    .pizza {
+        left: 57%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .pizza {
+        left: 58%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .roadmap {
+        left: 8%;
+    }
+
+    .pizza {
+        left: 55%;
+    }
+}
+
+@media (min-width: 1330px) {
+    .roadmap {
+        left: 8%;
+    }
+
+    .pizza {
+        left: 56%;
+    }
+}
+
+@media (min-width: 1360px) {
+    .roadmap-content {
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+
+    .roadmap {
+        left: 8%;
+    }
+
+    .pizza {
+        left: 57%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .roadmap {
+        top: 15%;
+    }
+
+    .pizza {
+        top: 15%;
+    }
+}
+
+@media (min-width: 1460px) {
+    .pizza {
+        left: 58%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .pizza {
+        left: 59%;
+    }
+}
+
+@media (min-width: 1520px) {
+    .pizza {
+        left: 60%;
+    }
+}
+
+@media (min-width: 1550px) {
+    .pizza {
+        left: 61%;
+    }
+}
+
+@media (min-width: 1590px) {
+    .pizza {
+        left: 62%;
+    }
+}
+
+@media (min-width: 1670px) {
+    .pizza {
+        left: 63%;
+    }
+}
+
+@media (min-width: 1720px) {
+    .pizza {
+        left: 64%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .pizza {
+        left: 65%;
+    }
+}
+
+@media (min-width: 1860px) {
+    .pizza {
+        left: 66%;
+    }
+}
+
+@media (min-width: 1900px) {
+    .roadmap-initial {
+        height: 900px !important;
+    }
+
+    .board {
+        margin-left: 300px; 
+        margin-top: 0px;
+        height: 700px !important;
+    }
+    
+    .teacher {
+        margin-left: 300px;
+        margin-top: 0px;
+        height: 700px !important;
+    }
+
+    .door {
+        height: 1200px !important;
+    }
+
+    .roadmap-content {
+        height: 1200px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+
+    .roadmap {
+        width: 700px;
+        height: 700px;
+    }
+
+    .pizza {
+        width: 700px;
+        height: 700px;
+        left: 57%;
+    }
+}
+
+@media (min-width: 2100px) {
+    .door {
+        height: 1250px !important;
+    }
+
+    .roadmap-content {
+        height: 1600px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}
+
+@media (min-width: 2150px) {
+    .door {
+        height: 1300px !important;
+    }
+
+    .pizza {
+        left: 59%;
+    }
+}
+
+@media (min-width: 2250px) {
+    .door {
+        height: 1400px !important;
+    }
+
+    .board {
+        margin-left: 400px; 
+        margin-top: 0px;
+        height: 700px !important;
+    }
+    
+    .teacher {
+        margin-left: 400px;
+        margin-top: 0px;
+        height: 700px !important;
+    }
+
+    .pizza {
+        left: 60%;
+    }
+}
+
+@media (min-width: 2250px) {
+    .pizza {
+        left: 61%;
+    }
+}
+
+@media (min-width: 2300px) {
+    .pizza {
+        left: 62%;
+    }
+}
+
+@media (min-width: 2350px) {
+    .pizza {
+        left: 63%;
+    }
+}
+
+@media (min-width: 2450px) {
+    .board {
+        margin-left: 500px; 
+        margin-top: 0px;
+        height: 700px !important;
+    }
+    
+    .teacher {
+        margin-left: 500px;
+        margin-top: 0px;
+        height: 700px !important;
+    }
+
+    .door {
+        height: 1500px !important;
+    }
+
+    .pizza {
+        left: 64%;
+    }
+}
+
+@media (min-height: 500px) {
+    .roadmap-initial {
+        height: 1000px !important;
+    }
+
+    .roadmap-initial img {
+        height: 100%;
+    }
+}
+
+@media (min-height: 1000px) {
+    .roadmap-content {
+        height: 1100px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}
+
+@media (min-height: 1100px) {
+    .roadmap-content {
+        height: 1200px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}
+
+@media (min-height: 1200px) {
+    .roadmap-content {
+        height: 1300px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}
+
+@media (min-height: 1300px) {
+    .roadmap-content {
+        height: 1400px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}
+
+@media (min-height: 1400px) {
+    .roadmap-content {
+        height: 1500px !important;
+        background-image: url('./images/background-roadmap.png');
+        background-size: cover;
+    }
+}

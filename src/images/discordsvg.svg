@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.Sombra_x0020_paralela{fill:none;}
+	.Resplandor_x0020_externo_x0020_5_x0020_pt_x002E_{fill:none;}
+	.Neón_x0020_azul{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Resalte_x0020_cromado{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.A_x0020_todo_x0020_ritmo_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+	.st0{display:none;}
+	.st1{display:inline;fill:#4D4D4D;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{display:inline;fill:none;stroke:#FFFFFF;stroke-width:34;stroke-miterlimit:10;}
+	.st5{display:inline;fill:#FFFFFF;}
+	.st6{display:inline;fill:none;stroke:#FFFFFF;stroke-width:33;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="6.123234e-17" y2="-1">
+	<stop  offset="0" style="stop-color:#656565"/>
+	<stop  offset="0.618" style="stop-color:#1B1B1B"/>
+	<stop  offset="0.6292" style="stop-color:#545454"/>
+	<stop  offset="0.9831" style="stop-color:#3E3E3E"/>
+</linearGradient>
+<g id="Capa_1" class="st0">
+	
+		<image style="display:inline;overflow:visible;opacity:0.29;" width="1200" height="987" xlink:href="5F515C18.jpg"  transform="matrix(0.4167 0 0 0.4167 0 48)">
+	</image>
+</g>
+<g id="Capa_3" class="st0">
+	<rect class="st1" width="500" height="500"/>
+</g>
+<g id="Capa_4" class="st0">
+	
+		<image style="display:inline;overflow:visible;opacity:0.35;" width="920" height="920" xlink:href="5F515C19.jpg"  transform="matrix(0.5 0 0 0.5 17 17)">
+	</image>
+</g>
+<g id="Capa_6" class="st0">
+	
+		<image style="display:inline;overflow:visible;opacity:0.35;" width="3840" height="2160" xlink:href="5F515C1F.jpg"  transform="matrix(0.1838 0 0 0.1838 -102 47)">
+	</image>
+</g>
+<g id="Capa_7">
+	<ellipse class="st2" cx="332.5" cy="263.5" rx="42.5" ry="50.5"/>
+	<path class="st3" d="M422,87c0,0-78-31-101-32l-16,27c0,0-33-9-111,0l-14-27c0,0-45,9-101,32c0,0-90,126-72,285c0,0,38,36,124,65
+		l25-44l-40-21l8-8c0,0,127,61,250,0l12,7l-42,22l25,44c0,0,85-31,124-65C493,372,512,228,422,87z M168.5,314
+		c-23.5,0-42.5-22.6-42.5-50.5s19-50.5,42.5-50.5s42.5,22.6,42.5,50.5S192,314,168.5,314z M331.5,314c-23.5,0-42.5-22.6-42.5-50.5
+		s19-50.5,42.5-50.5s42.5,22.6,42.5,50.5S355,314,331.5,314z"/>
+</g>
+<g id="Capa_5" class="st0">
+	<path class="st4" d="M345.9,457H148.6C88.1,457,39,407.9,39,347.4V150.1C39,89.6,88.1,40.5,148.6,40.5h197.3
+		c60.5,0,109.6,49.1,109.6,109.6v197.3C455.5,407.9,406.4,457,345.9,457z"/>
+	<circle class="st5" cx="365" cy="130" r="29"/>
+	<circle class="st6" cx="247" cy="249" r="98.5"/>
+</g>
+<g id="Capa_2" class="st0">
+	<path class="st5" d="M2,406c0,0,84,16,152-43c0,0-65,6-94-68c0,0,31,3,43-4c0,0-76-14-80-102c0,0,27,16,49,14c0,0-74-40-34-134
+		c0,0,81,99,211,105c0,0-21-63,46-112c0,0,81-41,128,19c0,0,58-15,64-25c0,0-8,35-44,57c0,0,51-11,55-16c0,0-16,33-47,52
+		c0,0-1,152-94,230S120,485,2,406z"/>
+</g>
+</svg>

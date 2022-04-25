@@ -1,0 +1,19 @@
+{
+  "CONTRACT_ADDRESS": "HERE",
+  "SCAN_LINK": "HERE",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "HERE",
+  "SYMBOL": "HERE",
+  "MAX_SUPPLY": 5000,
+  "WEI_COST": 50000000000000000,
+  "DISPLAY_COST": 0.05,
+  "GAS_LIMIT": 112000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "HERE",
+  "SHOW_BACKGROUND": true,
+  "STATUS": false
+}

@@ -1,0 +1,671 @@
+:root {
+    scroll-behavior: smooth;
+
+    --shadow-green-1: rgba(0, 124, 9, 0.95);
+    --shadow-green-2: rgba(0, 124, 9, 0.95);
+    --shadow-green-3: rgba(0, 124, 9, 0.95);
+    --shadow-green-4: rgba(0, 124, 9, 0.73);
+    --shadow-green-5: rgba(0, 124, 9, 0.85);
+    --shadow-green-6: rgba(0, 124, 9, 0.85);
+
+    --shadow-red-1: rgba(103, 1, 1, 0.95);
+    --shadow-red-2: rgba(103, 1, 1, 0.95);
+    --shadow-red-3: rgba(103, 1, 1, 0.95);
+    --shadow-red-4: rgba(103, 1, 1, 0.73);
+    --shadow-red-5: rgba(103, 1, 1, 0.85);
+    --shadow-red-6: rgba(103, 1, 1, 0.85);
+
+    --shadow-blue-1: rgba(1, 25, 103, 0.95);
+    --shadow-blue-2: rgba(1, 25, 103, 0.95);
+    --shadow-blue-3: rgba(1, 25, 103, 0.95);
+    --shadow-blue-4: rgba(1, 25, 103, 0.73);
+    --shadow-blue-5: rgba(1, 25, 103, 0.85);
+    --shadow-blue-6: rgba(1, 25, 103, 0.95);
+
+    --shadow-brown-1: rgba(38, 10, 0, 0.95);
+    --shadow-brown-2: rgba(38, 10, 0, 0.95);
+    --shadow-brown-3: rgba(38, 10, 0, 0.95);
+    --shadow-brown-4: rgba(38, 10, 0, 0.73);
+    --shadow-brown-5: rgba(38, 10, 0, 0.85);
+    --shadow-brown-6: rgba(38, 10, 0, 0.95);
+
+    --main-gray-color: #1E1E1E;
+    --main-gray-light-color: #545454;
+    --main-black-color: #0F0F0F;
+    --main-orange-color: #003504;
+    --main-orange-dark-color: #BC4B00;
+    --main-yellow-color: #FFD800;
+
+    --primary: #3C193B;
+    --primary-text: #7A193B;
+    --boxes: #FF0000;
+    --darkboxes: rgba(0,127,14,0.3);
+}
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+.main-team-title {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .team-box {
+    border-radius: 10px;
+  }
+  
+  .main-team-text {
+      padding: 20px;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: white; 
+  }
+  
+  .main-team-name {
+      /*margin-top: 30px !important;*/
+      text-align: center;
+      padding: 20px;
+      margin-left: 6% !important;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: white;
+      text-shadow: #0A0A0A 1px 0 30px;
+  }
+  
+  .main-team-role {
+      padding: 2px;
+      font-size: 1em;
+      font-weight: 900;
+      color: white;
+      margin-left: 6% !important;
+      text-align: center;
+      padding-bottom: 40px;
+      text-shadow: #0A0A0A 1px 0 30px;
+  }
+  /*
+  a:link,
+  a:active,
+  a:visited{
+    color:rgba(255,255,255,1);
+  }
+  
+  a:hover{
+    color:#2D9EEF;
+  }
+  */
+  .team-member {
+    margin: 15px 0;
+    padding: 30px;
+  }
+  
+  .team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-member figure img {
+    min-width: 100%;
+  }
+  
+  .team-member figcaption p {
+    font-size: 16px;
+  }
+  
+  .team-member figcaption ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 25%;
+    padding: 0;
+  }
+  
+  .team-member figcaption ul {
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .team-member figcaption ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .team-member h4 {
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  
+  .team-member figcaption {
+    padding: 50px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    background: var(--darkboxes);
+    /* Primary color, can be changed via colors.css */
+    
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .team-member figure:hover figcaption ul li a:hover {
+    color: var(--main-orange-color);
+  }
+  
+  .team-member figure img {
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+    -moz-transform: scale(1) rotate(0) translateY(0);
+    -o-transform: scale(1) rotate(0) translateY(0);
+    -ms-transform: scale(1) rotate(0) translateY(0);
+    transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .team-member figure:hover img {
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+    transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+.fixed-team {
+  /*
+  margin-left: 38%;
+  margin-bottom: -25px;
+  */
+  margin-top: -25px;
+}
+
+@media (min-width: 250px) {
+  .fixed-team {
+    margin-left: 38%;
+  }
+}
+
+@media (min-width: 300px) {
+  .fixed-team {
+    margin-left: 38%;
+  }
+}
+
+@media (min-width: 330px) {
+  .fixed-team {
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 350px) {
+  .fixed-team {
+    margin-left: 41%;
+  }
+}
+
+@media (min-width: 370px) {
+  .fixed-team {
+    margin-left: 43%;
+  }
+}
+
+@media (min-width: 390px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+}
+
+@media (min-width: 400px) {
+  .main-team-name {
+    margin-left: 5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 420px) {
+  .fixed-team {
+    margin-left: 44%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 450px) {
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .main-team-name {
+    margin-left: 2% !important;
+  }
+
+  .main-team-role {
+      margin-left: 2% !important;
+  }
+}
+
+@media (min-width: 510px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 4.5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4.5% !important;
+  }
+}
+
+@media (min-width: 570px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 4.5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4.5% !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 3.5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 3.5% !important;
+  }
+}
+
+@media (min-width: 620px) {
+  .fixed-team {
+    margin-left: 47%;
+  }
+
+  .main-team-name {
+    margin-left: 5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .fixed-team {
+    margin-left: 48%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 690px) {
+  .fixed-team {
+    margin-left: 47%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 760px) {
+  .fixed-team {
+    margin-left: 49%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .fixed-team {
+    margin-left: 44%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 850px) {
+  .fixed-team {
+    margin-left: 45%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .fixed-team {
+    margin-left: 45%;
+  }
+
+  .main-team-name {
+    margin-left: 5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 930px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 5% !important;
+  }
+
+  .main-team-role {
+      margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 1010px) {
+  .fixed-team {
+    margin-left: 48%;
+  }
+
+  .main-team-name {
+    margin-left: 7% !important;
+  }
+
+  .main-team-role {
+      margin-left: 7% !important;
+  }
+}
+
+@media (min-width: 1170px) {
+  .fixed-team {
+    margin-left: 48%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .fixed-team {
+    margin-left: 40%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+
+  .main-team-name {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  .main-team-role {
+      font-size: 0.9em;
+      font-weight: 700;
+  }
+}
+
+@media (min-width: 1380px) {
+  .fixed-team {
+    margin-left: 40%;
+  }
+
+  .main-team-name {
+    margin-left: 6% !important;
+  }
+
+  .main-team-role {
+      margin-left: 6% !important;
+  }
+}
+
+@media (min-width: 1550px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 1570px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 1650px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 4% !important;
+  }
+
+  .main-team-role {
+      margin-left: 4% !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .fixed-team {
+    margin-left: 42%;
+  }
+
+  .main-team-name {
+    margin-left: 3% !important;
+  }
+
+  .main-team-role {
+      margin-left: 3% !important;
+  }
+
+  .main-team-name {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .main-team-role {
+      font-size: 1em;
+      font-weight: 700;
+  }
+}
+
+@media (min-width: 2100px) {
+  .fixed-team {
+    margin-left: 44%;
+  }
+
+  .main-team-name {
+    margin-left: 3% !important;
+  }
+
+  .main-team-role {
+      margin-left: 3% !important;
+  }
+}
+
+@media (min-width: 2200px) {
+  .fixed-team {
+    margin-left: 44%;
+  }
+
+  .main-team-name {
+    margin-left: 3% !important;
+  }
+
+  .main-team-role {
+      margin-left: 3% !important;
+  }
+}
+
+@media (min-width: 2500px) {
+  .fixed-team {
+    margin-left: 44%;
+  }
+
+  .main-team-name {
+    margin-left: 1% !important;
+  }
+
+  .main-team-role {
+      margin-left: 1% !important;
+  }
+}
+
+@media (min-width: 2800px) {
+  .fixed-team {
+    margin-left: 46%;
+  }
+
+  .main-team-name {
+    margin-left: 3% !important;
+  }
+
+  .main-team-role {
+      margin-left: 3% !important;
+  }
+}

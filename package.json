@@ -1,0 +1,38 @@
+{
+  "name": "foodmoon",
+  "version": "1.0.0",
+  "description": "FoodMoon NFT. Descending from a different galaxy to Earth to test if you are worthy of it are the Mythical Species called FoodMoon. We, the Intergalactic Pizzas, are the first wave but don't be afraid; we are coming to reward you... or maybe not!",
+  "private": true,
+  "dependencies": {
+    "aos": "^2.3.4",
+    "gsap": "^3.9.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.5.1",
+    "web3-eth-contract": "^1.5.2"
+  },
+  "author": "Mysterio",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
